@@ -1,0 +1,17 @@
+#ABNF 1.0 UTF-8;
+language zh-CN; 
+mode voice;
+
+root $main;
+$main = $call $open $music|$call $next|$call $lightsUp|$call $lightsDown;
+
+$call = 东方不败|芝麻开门|智能管家|智能家居;
+
+$open = 打开;
+$music = 音乐;
+
+$next = 下一首;
+
+$lightsUp = 开灯;
+$lightsDown = 关灯;
+
